@@ -1,0 +1,142 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 餐饮管理系统 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/餐饮管理系统.res" /d "NDEBUG" "C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\餐饮管理系统.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP210.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/餐饮管理系统.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\ADOConn.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\BuyGoods.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\cookermenu.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\CopyDatabase.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\DishesInfo.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\DishesNum.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\DishesTotle.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\GoodsInfo.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\GoodsSelect.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\Login.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\ManagePower.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\member.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\MonthIncome.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\OpenTable.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\PayOrder.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\Register.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\ReturnDatabase.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\SelectDishes.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\UpdateDishes.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\UserManage.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\餐饮管理系统.cpp"
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\餐饮管理系统Dlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP210.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP211.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/餐饮管理系统.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP211.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP212.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/餐饮管理系统.pdb" /machine:I386 /out:"Release/餐饮管理系统.exe" 
+".\Release\ADOConn.obj"
+".\Release\BuyGoods.obj"
+".\Release\cookermenu.obj"
+".\Release\CopyDatabase.obj"
+".\Release\DishesInfo.obj"
+".\Release\DishesNum.obj"
+".\Release\DishesTotle.obj"
+".\Release\GoodsInfo.obj"
+".\Release\GoodsSelect.obj"
+".\Release\Login.obj"
+".\Release\ManagePower.obj"
+".\Release\member.obj"
+".\Release\MonthIncome.obj"
+".\Release\OpenTable.obj"
+".\Release\PayOrder.obj"
+".\Release\Register.obj"
+".\Release\ReturnDatabase.obj"
+".\Release\SelectDishes.obj"
+".\Release\StdAfx.obj"
+".\Release\UpdateDishes.obj"
+".\Release\UserManage.obj"
+".\Release\餐饮管理系统.obj"
+".\Release\餐饮管理系统Dlg.obj"
+".\Release\餐饮管理系统.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP212.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ADOConn.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\ADOConn.cpp(36) : warning C4010: single-line comment contains line-continuation character
+C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\ADOConn.cpp(37) : warning C4010: single-line comment contains line-continuation character
+BuyGoods.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+cookermenu.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+CopyDatabase.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+DishesInfo.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\DishesInfo.cpp(115) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\DishesInfo.cpp(295) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+DishesNum.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+DishesTotle.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+GoodsInfo.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\GoodsInfo.cpp(272) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\GoodsInfo.cpp(290) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+GoodsSelect.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Login.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+ManagePower.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+member.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+MonthIncome.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\MonthIncome.cpp(80) : warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+OpenTable.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+PayOrder.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Register.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+ReturnDatabase.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+SelectDishes.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+UpdateDishes.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\UpdateDishes.cpp(185) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\UpdateDishes.cpp(199) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\Administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\UpdateDishes.cpp(269) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+UserManage.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Generating Code...
+Compiling...
+餐饮管理系统.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+餐饮管理系统Dlg.cpp
+c:\documents and settings\administrator\桌面\kfc改9\kfc改\kfc改\餐厅管理系统新\餐饮管理系统\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+餐饮管理系统.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

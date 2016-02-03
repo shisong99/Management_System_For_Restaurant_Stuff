@@ -1,0 +1,919 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\餐饮管理系统.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 肯德基小黄鸡管理系统"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "肯德基小黄鸡管理系统 2.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    DEFPUSHBUTTON   "确定",IDOK,178,20,50,14,WS_GROUP
+    LTEXT           "版权所有 (C) 2013",IDC_STATIC,39,28,119,8,SS_NOPREFIX
+END
+
+IDD_MY_DIALOG DIALOGEX 0, 0, 419, 340
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "肯德基小黄鸡管理系统"
+MENU IDR_MENU
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         260,IDC_background,"Static",SS_BITMAP,0,1,419,327
+    CONTROL         "修改菜单",IDR_MENU_update,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,195,18,37,13
+    CONTROL         "员工管理",IDR_MENU_employeesManage,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,258,56,37,13
+    CONTROL         "今天数钱",IDR_MENU_dayincome,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,270,120,37,13
+    CONTROL         "退出",IDR_MENU_exit,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    238,177,37,13
+    CONTROL         "登录",IDR_MENU_login,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    116,149,37,13
+    CONTROL         "想吃啥",IDR_MENU_open,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,114,60,37,13
+END
+
+IDD_login DIALOG DISCARDABLE  0, 0, 199, 88
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户登录"
+FONT 14, "楷体_GB2312"
+BEGIN
+    GROUPBOX        "请输入登录信息",IDC_STATIC,7,7,185,74,BS_CENTER
+    CONTROL         151,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,9,
+                    14,60,53
+    CONTROL         "取消",IDC_btnCancel,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    131,61,26,12
+    LTEXT           "密   码:",IDC_STATIC,88,43,33,8
+    CTEXT           "用 户 名:",IDC_STATIC,88,23,37,8
+    CONTROL         "登录",IDC_btnOK,"Button",BS_OWNERDRAW | WS_TABSTOP,90,
+                    61,26,13
+    EDITTEXT        IDC_username,125,21,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_userpwd,125,40,60,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_openTable DIALOG DISCARDABLE  0, 0, 127, 147
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择服务窗口"
+FONT 14, "楷体_GB2312"
+BEGIN
+    CONTROL         "List1",IDC_listShow,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,9,17,107,80
+    LTEXT           "选择窗口号:",IDC_STATIC,15,109,40,8
+    EDITTEXT        IDC_tableID,66,104,47,14,ES_AUTOHSCROLL
+    CONTROL         "确定桌号",IDC_btnSelectTable,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,7,125,44,14
+    CONTROL         "返回上层",IDC_btnBack,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,68,125,44,14
+    GROUPBOX        "空闲窗口信息",IDC_STATIC,7,7,113,93,BS_CENTER
+END
+
+IDD_register DIALOGEX 0, 0, 121, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_RIGHT | WS_EX_RTLREADING | WS_EX_LEFTSCROLLBAR
+CAPTION "员工注册信息"
+FONT 14, "楷体_GB2312", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "请输入信息",IDC_STATIC,7,7,107,105,BS_CENTER,
+                    WS_EX_RIGHT | WS_EX_RTLREADING
+    EDITTEXT        IDC_username,11,17,60,14,ES_RIGHT | ES_AUTOHSCROLL,
+                    WS_EX_RIGHT | WS_EX_RTLREADING | WS_EX_LEFTSCROLLBAR
+    EDITTEXT        IDC_userPasswnd,11,41,60,14,ES_RIGHT | ES_PASSWORD | 
+                    ES_AUTOHSCROLL,WS_EX_RIGHT | WS_EX_RTLREADING | 
+                    WS_EX_LEFTSCROLLBAR
+    EDITTEXT        IDC_reapetPwd,13,63,60,14,ES_RIGHT | ES_PASSWORD | 
+                    ES_AUTOHSCROLL,WS_EX_RIGHT | WS_EX_RTLREADING | 
+                    WS_EX_LEFTSCROLLBAR
+    CONTROL         "取消",IDC_bntCancel,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    15,91,40,14,WS_EX_RIGHT | WS_EX_RTLREADING
+    RTEXT           "用 户 名:",IDC_STATIC,73,19,41,8,0,WS_EX_RIGHT | 
+                    WS_EX_RTLREADING
+    RTEXT           "密    码:",IDC_STATIC,73,43,40,8,0,WS_EX_RIGHT | 
+                    WS_EX_RTLREADING
+    RTEXT           "确定密码:",IDC_STATIC,73,67,40,8,0,WS_EX_RIGHT | 
+                    WS_EX_RTLREADING
+    CONTROL         "注册",IDC_btnRegister,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,74,91,40,14,WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+IDD_selectDishes DIALOGEX 0, 0, 328, 219
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "点菜"
+FONT 14, "楷体_GB2312"
+BEGIN
+    LTEXT           "服务窗口号:",IDC_STATIC,85,21,45,8
+    EDITTEXT        IDC_tablesID,135,19,47,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_TRANSPARENT
+    CONTROL         "List1",IDC_listShowDishes,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,18,99,140,87
+    CONTROL         "加入",IDC_btnSelect,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    163,54,20,12,WS_EX_TRANSPARENT
+    CONTROL         "取消",IDC_btnCancel,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    164,123,20,12
+    CONTROL         "List2",IDC_listSelect,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,198,39,107,147
+    CONTROL         "确定",IDC_btnOK,"Button",BS_OWNERDRAW | WS_TABSTOP,51,
+                    197,50,14
+    CONTROL         "取消",IDC_Cancel,"Button",BS_OWNERDRAW | WS_TABSTOP,174,
+                    197,50,14
+    GROUPBOX        "欢迎点餐",IDC_STATIC,7,7,314,187,BS_CENTER
+    GROUPBOX        "餐品二级菜单",IDC_STATIC,14,89,147,101,BS_CENTER
+    GROUPBOX        "您的菜",IDC_STATIC,189,30,121,161,BS_CENTER
+    GROUPBOX        "餐品一级菜单",IDC_STATIC,14,34,147,54,BS_CENTER
+    CONTROL         "主食",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,54,46,75,8
+    CONTROL         "甜点",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,54,61,75,8
+    CONTROL         "饮料",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,54,76,75,8
+    PUSHBUTTON      "结算",IDR_MENU_pay,295,198,20,11
+END
+
+IDD_dishesNum DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "点菜数量"
+FONT 14, "楷体_GB2312"
+BEGIN
+    GROUPBOX        "请输入菜的数量",IDC_STATIC,7,7,167,74,BS_CENTER
+    LTEXT           "请输入菜的数量:",IDC_STATIC,16,24,61,8
+    EDITTEXT        IDC_dishesNum,87,21,57,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "提交",IDC_btnOK,23,54,50,12
+    PUSHBUTTON      "返回",IDC_btnBack,91,54,50,12
+END
+
+IDD_dishesTotle DIALOG DISCARDABLE  0, 0, 226, 214
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "菜的数量"
+FONT 10, "System"
+BEGIN
+END
+
+IDD_updateDishes DIALOG DISCARDABLE  0, 0, 258, 192
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改菜单"
+FONT 14, "楷体_GB2312"
+BEGIN
+    LTEXT           "桌号:",IDC_STATIC,80,17,20,8
+    COMBOBOX        IDC_tableID,109,15,33,106,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_listShowDishes,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,18,46,101,117
+    CONTROL         "List1",IDC_listShowSelect,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,150,51,91,110
+    CONTROL         "加入",IDC_bntADD,"Button",BS_OWNERDRAW | WS_TABSTOP,123,
+                    67,27,14
+    CONTROL         "取消",IDC_bntSUB,"Button",BS_OWNERDRAW | WS_TABSTOP,123,
+                    101,26,14
+    CONTROL         "确定",IDC_bntOK,"Button",BS_OWNERDRAW | WS_TABSTOP,79,
+                    170,50,14
+    CONTROL         "取消",IDC_bntCancel,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    133,171,50,14
+    GROUPBOX        "请选择需要服务的桌号",IDC_STATIC,14,6,237,28,BS_CENTER
+    GROUPBOX        "菜式信息",IDC_STATIC,13,35,108,131
+    GROUPBOX        "您的菜单:",IDC_STATIC,149,39,100,126,BS_CENTER
+    CONTROL         "结算",IDR_MENU_pay,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    123,136,21,12
+END
+
+IDD_payorder DIALOG DISCARDABLE  0, 0, 324, 203
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "结账"
+FONT 14, "楷体_GB2312"
+BEGIN
+    GROUPBOX        "账单结算",IDC_STATIC,7,7,310,134,BS_CENTER
+    LTEXT           "服务窗口号:",IDC_STATIC,13,23,46,8
+    CONTROL         "List1",IDC_listShowOrder,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,144,19,173,119
+    LTEXT           "应收:",IDC_STATIC,14,41,25,8
+    LTEXT           "实收:",IDC_STATIC,14,86,25,8
+    LTEXT           "找零:",IDC_STATIC,14,100,25,8
+    COMBOBOX        IDC_tableID,60,21,34,68,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_payOrder,44,39,40,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_receiver,44,84,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_surplus,44,99,40,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "结账",IDC_bntOK,"Button",BS_OWNERDRAW | WS_TABSTOP,36,
+                    125,30,12
+    EDITTEXT        IDC_discount,44,54,40,12,ES_AUTOHSCROLL
+    LTEXT           "折扣:",IDC_STATIC,14,56,25,8
+    LTEXT           "折后:",IDC_STATIC,14,71,25,8
+    EDITTEXT        IDC_afterdiscount,44,69,40,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "List1",IDC_festivallist,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,143,310,38
+END
+
+IDD_buyGoods DIALOG DISCARDABLE  0, 0, 245, 221
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "进货管理"
+FONT 14, "楷体_GB2312"
+BEGIN
+    GROUPBOX        "请选择您所需的货物",IDC_STATIC,7,4,231,183,BS_CENTER
+    CONTROL         ">>",IDC_goodsAdd,"Button",BS_OWNERDRAW | WS_TABSTOP,114,
+                    70,25,14
+    CONTROL         "List2",IDC_listShowGoods,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,10,45,103,125
+    LTEXT           "进货时间:",IDC_STATIC,51,29,36,8
+    EDITTEXT        IDC_buyTime,92,26,49,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "List3",IDC_listShowSelect,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,144,43,93,127
+    CONTROL         "<<",IDC_goodsSub,"Button",BS_OWNERDRAW | WS_TABSTOP,115,
+                    122,27,14
+    LTEXT           "进货数量:",IDC_STATIC,14,175,37,8
+    EDITTEXT        IDC_goodsNum,72,171,40,14,ES_AUTOHSCROLL
+    LTEXT           "总发费:",IDC_STATIC,142,175,29,8
+    EDITTEXT        IDC_totlePrice,178,171,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "确定",IDC_bntOK,"Button",BS_OWNERDRAW | WS_TABSTOP,28,
+                    195,27,14
+    CONTROL         "重置",IDC_bntReset,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    96,195,27,14
+    CONTROL         "退出",IDC_bntCancel,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    166,195,27,14
+END
+
+IDD_GoodsInfo DIALOG DISCARDABLE  0, 0, 211, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "商品信息"
+FONT 14, "楷体_GB2312"
+BEGIN
+    CONTROL         "List1",IDC_listShowGoods,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,16,190,109
+    GROUPBOX        "请填入商品信息",IDC_STATIC,7,7,197,148,BS_CENTER
+    LTEXT           "商品名称:",IDC_STATIC,7,134,37,8
+    LTEXT           "单价（元）",IDC_STATIC,105,135,41,8
+    EDITTEXT        IDC_goodsPrice,147,133,48,14,ES_AUTOHSCROLL
+    CONTROL         "添加",IDC_bntADD,"Button",BS_OWNERDRAW | WS_TABSTOP,17,
+                    162,26,14
+    CONTROL         "修改",IDC_bntUpdate,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    65,162,26,14
+    CONTROL         "删除",IDC_bntDelete,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    113,162,26,14
+    CONTROL         "返回",IDC_bntCancel,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    161,162,26,14
+    COMBOBOX        IDC_goodsName,44,132,46,64,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_dishesInfo DIALOG DISCARDABLE  0, 0, 259, 192
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "菜式信息"
+FONT 14, "楷体_GB2312"
+BEGIN
+    GROUPBOX        "菜式信息",IDC_STATIC,14,10,238,156,BS_CENTER
+    CONTROL         "List1",IDC_listShowDishes,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,15,21,233,124
+    LTEXT           "菜名:",IDC_STATIC,19,153,31,8
+    LTEXT           "价格（盘/元）:",IDC_STATIC,126,154,57,8
+    EDITTEXT        IDC_dishesPrice,188,150,57,14,ES_AUTOHSCROLL
+    CONTROL         "添加",IDC_bntADD,"Button",BS_OWNERDRAW | WS_TABSTOP,15,
+                    171,31,14
+    CONTROL         "修改",IDC_bntUpdate,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    70,171,31,14
+    CONTROL         "删除",IDC_bntDelete,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    128,171,31,14
+    CONTROL         "返回",IDC_bntCancel,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    188,171,31,14
+    COMBOBOX        IDC_dishesName,50,151,51,37,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_goodsSelect DIALOG DISCARDABLE  0, 0, 174, 187
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "货物查询"
+FONT 14, "楷体_GB2312"
+BEGIN
+    GROUPBOX        "请输入要查询的信息",IDC_STATIC,7,13,160,159,BS_CENTER
+    COMBOBOX        IDC_stockYear,10,23,38,95,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "年",IDC_STATIC,50,24,9,8
+    COMBOBOX        IDC_stockMonth,60,23,38,95,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "月",IDC_STATIC,103,24,9,8
+    COMBOBOX        IDC_stockDay,114,24,38,95,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "日",IDC_STATIC,157,25,9,8
+    CONTROL         "List1",IDC_listShowGoods,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,41,160,104
+    CONTROL         "查询",IDC_bntQuery,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    29,150,42,14
+    CONTROL         "取消",IDC_bntCancel,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    106,150,42,14
+END
+
+IDD_managePower DIALOG DISCARDABLE  0, 0, 149, 125
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "权限管理"
+FONT 14, "楷体_GB2312"
+BEGIN
+    GROUPBOX        "请选择用户",IDC_STATIC,11,14,131,28,BS_CENTER
+    LTEXT           "用 户 名:",IDC_STATIC,24,24,37,8
+    COMBOBOX        IDC_username,74,25,45,114,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "设置权限",IDC_STATIC,7,44,135,55,BS_CENTER
+    CONTROL         "经理",IDC_manager,"Button",BS_AUTORADIOBUTTON,57,56,32,
+                    10
+    CONTROL         "领班",IDC_forman,"Button",BS_AUTORADIOBUTTON,57,78,32,
+                    10
+    CONTROL         "营业员",IDC_assistant,"Button",BS_AUTORADIOBUTTON,57,89,
+                    40,10
+    CONTROL         "设置",IDC_bntOK,"Button",BS_OWNERDRAW | WS_TABSTOP,21,
+                    102,50,14
+    CONTROL         "取消",IDC_bntCancel,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    89,102,50,14
+    CONTROL         "厨师",IDC_cooker,"Button",BS_AUTORADIOBUTTON,57,67,32,
+                    10
+END
+
+IDD_userManage DIALOG DISCARDABLE  0, 0, 173, 128
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户管理"
+FONT 14, "楷体_GB2312"
+BEGIN
+    GROUPBOX        "用户信息修改",IDC_STATIC,7,7,159,114,BS_CENTER
+    CONTROL         "List2",IDC_listShowInfo,"SysListView32",WS_BORDER | 
+                    WS_TABSTOP,9,19,45,95
+    LTEXT           "用户名:",IDC_STATIC,69,29,29,8
+    EDITTEXT        IDC_username,111,27,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "密  码:",IDC_STATIC,69,49,29,8
+    EDITTEXT        IDC_userpwd,111,47,40,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "修改密码",IDC_bntUpdate,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,71,70,37,13
+    CONTROL         "删除用户",IDC_bntDelete,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,113,69,37,13
+    CONTROL         "返回",IDC_bntCancel,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    98,92,37,13
+    GROUPBOX        "用户信息",IDC_STATIC,66,17,95,97,BS_CENTER
+    GROUPBOX        "",IDC_STATIC,7,14,50,101
+END
+
+IDD_copySQL DIALOG DISCARDABLE  0, 0, 196, 85
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "备份数据库"
+FONT 14, "楷体_GB2312"
+BEGIN
+    GROUPBOX        "请选择备份的路径",IDC_STATIC,14,7,167,61,BS_CENTER
+    LTEXT           "备份路径:",IDC_STATIC,15,19,37,8
+    EDITTEXT        IDC_copyWay,52,18,92,11,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "浏览",IDC_browse,150,16,26,14
+    LTEXT           "数据库名：",IDC_STATIC,16,41,43,8
+    EDITTEXT        IDC_DatabaseName,52,37,48,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_bntOK,27,53,36,11
+    PUSHBUTTON      "取消",IDC_bntCancel,106,54,36,11
+END
+
+IDD_returnSQL DIALOG DISCARDABLE  0, 0, 197, 83
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "数据库还原"
+FONT 14, "楷体_GB2312"
+BEGIN
+    GROUPBOX        "请选择数据库地址",IDC_STATIC,15,13,169,63,BS_CENTER
+    LTEXT           "路径名:",IDC_STATIC,17,32,29,8
+    EDITTEXT        IDC_databasePath,48,32,98,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "浏览",IDC_bntCheck,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    152,32,31,14
+    CONTROL         "还原",IDC_bntReturn,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    24,51,50,14
+    CONTROL         "取消",IDC_bntCancel,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    99,51,50,14
+END
+
+IDD_cookermenu DIALOG DISCARDABLE  0, 0, 264, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "厨师菜单"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_listcookerdishes,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,69,14,188,164
+    GROUPBOX        "已点菜单",IDC_STATIC,7,7,250,171
+    CONTROL         "删除",IDC_cookerdeletedishes,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,18,127,50,14
+    CONTROL         "清空",IDC_cookerdeletealldishes,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,17,107,50,14
+    CONTROL         "刷新",IDC_updatecookermenu,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,16,146,50,14
+    LTEXT           "桌号:",IDC_STATIC,7,21,20,10
+    COMBOBOX        IDC_tableID,26,19,43,68,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_member DIALOG DISCARDABLE  0, 0, 333, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,33,162,50,14
+    PUSHBUTTON      "取消",IDCANCEL,234,162,50,14
+    COMBOBOX        IDC_COMBOmemberID,59,20,50,80,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_member,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,131,16,185,122
+    LTEXT           "会员号码：",IDC_STATIC,15,22,43,13
+END
+
+IDD_monthIncome DIALOG DISCARDABLE  0, 0, 151, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "月收入查询"
+FONT 14, "楷体_GB2312"
+BEGIN
+    GROUPBOX        "请输入查询的年月",IDC_STATIC,7,13,136,27
+    COMBOBOX        IDC_incomeYear,16,24,45,68,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "年",IDC_STATIC,64,23,9,8
+    COMBOBOX        IDC_incomeMonth,83,24,45,68,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "月",IDC_STATIC,131,24,9,8
+    CONTROL         "查询",IDC_bntFound,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    24,46,36,14
+    CONTROL         "取消",IDC_bntCancel,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    89,46,36,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "餐饮管理系统 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "餐饮管理系统\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "餐饮管理系统.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "餐饮管理系统 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 333
+        HORZGUIDE, 61
+    END
+
+    IDD_login, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_openTable, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_register, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 114
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_selectDishes, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 321
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_dishesNum, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_dishesTotle, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_updateDishes, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_payorder, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 196
+    END
+
+    IDD_buyGoods, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_GoodsInfo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_dishesInfo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_goodsSelect, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_managePower, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_userManage, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_copySQL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_returnSQL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_cookermenu, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_member, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_monthIncome, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\idr_main.ico"
+IDI_ICON_num            ICON    DISCARDABLE     "res\\2.ico"
+IDI_ICON_update         ICON    DISCARDABLE     "res\\33.ico"
+IDI_ICON_login          ICON    DISCARDABLE     "res\\42.ico"
+IDI_ICON_reg            ICON    DISCARDABLE     "res\\57.ico"
+IDI_ICON_dayincome      ICON    DISCARDABLE     "res\\61.ico"
+IDI_ICON_cancel         ICON    DISCARDABLE     "res\\71.ico"
+IDI_ICON_payorder       ICON    DISCARDABLE     "res\\82.ico"
+IDI_ICON_open           ICON    DISCARDABLE     "res\\91.ico"
+IDI_ICON_founding       ICON    DISCARDABLE     "res\\142.ico"
+IDI_ICON_order          ICON    DISCARDABLE     "res\\167.ico"
+IDI_ICON_cookermenu     ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\login#.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_loginImage          BITMAP  DISCARDABLE     "res\\login.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\diwen.bmp"
+IDB_BITMAPxiangchisha   BITMAP  DISCARDABLE     "res\\xiangchisha.bmp"
+IDB_BITMAPbuygoods_exit1 BITMAP  DISCARDABLE     "res\\buygoods_exit1.bmp"
+IDB_BITMAPbuygoods_exit2 BITMAP  DISCARDABLE     "res\\buygoods_exit2.bmp"
+IDB_BITMAPbuygoods_right2 BITMAP  DISCARDABLE     "res\\buygoods_right2.bmp"
+IDB_BITMAPbuygoods_ensure1 BITMAP  DISCARDABLE     "res\\buygoods_ensure1.bmp"
+IDB_BITMAPbuygoods_ensure2 BITMAP  DISCARDABLE     "res\\buygoods_ensure2.bmp"
+IDB_BITMAPbuygoods_left1 BITMAP  DISCARDABLE     "res\\buygoods_left1.bmp"
+IDB_BITMAPbuygoods_left2 BITMAP  DISCARDABLE     "res\\buygoods_left2.bmp"
+IDB_BITMAPbuygoods_reset1 BITMAP  DISCARDABLE     "res\\buygoods_reset1.bmp"
+IDB_BITMAPbuygoods_reset2 BITMAP  DISCARDABLE     "res\\buygoods_reset2.bmp"
+IDB_BITMAPbuygoods_right1 BITMAP  DISCARDABLE     "res\\buygoods_right1.bmp"
+IDB_BITMAPcookermenu_fresh2 BITMAP  DISCARDABLE     "res\\cookermenu_fresh2.bmp"
+IDB_BITMAPcookermenu_clear1 BITMAP  DISCARDABLE     "res\\cookermenu_clear1.bmp"
+IDB_BITMAPcookermenu_clear2 BITMAP  DISCARDABLE     "res\\cookermenu_clear2.bmp"
+IDB_BITMAPcookermenu_delete1 BITMAP  DISCARDABLE     "res\\cookermenu_delete1.bmp"
+IDB_BITMAPcookermenu_delete2 BITMAP  DISCARDABLE     "res\\cookermenu_delete2.bmp"
+IDB_BITMAPcookermenu_fresh1 BITMAP  DISCARDABLE     "res\\cookermenu_fresh1.bmp"
+IDB_BITMAPdishinfo_update2 BITMAP  DISCARDABLE     "res\\dishinfo_update2.bmp"
+IDB_BITMAPdishinfo_add1 BITMAP  DISCARDABLE     "res\\dishinfo_add1.bmp"
+IDB_BITMAPdishinfo_add2 BITMAP  DISCARDABLE     "res\\dishinfo_add2.bmp"
+IDB_BITMAPdishinfo_back1 BITMAP  DISCARDABLE     "res\\dishinfo_back1.bmp"
+IDB_BITMAPdishinfo_back2 BITMAP  DISCARDABLE     "res\\dishinfo_back2.bmp"
+IDB_BITMAPdishinfo_delete1 BITMAP  DISCARDABLE     "res\\dishinfo_delete1.bmp"
+IDB_BITMAPdishinfo_delete2 BITMAP  DISCARDABLE     "res\\dishinfo_delete2.bmp"
+IDB_BITMAPdishinfo_update1 BITMAP  DISCARDABLE     "res\\dishinfo_update1.bmp"
+IDB_BITMAPgoodsselect_query2 BITMAP  DISCARDABLE     "res\\goodsselect_query2.bmp"
+IDB_BITMAPgoodsselect_cancel1 BITMAP  DISCARDABLE     "res\\goodsselect_cancel1.bmp"
+IDB_BITMAPgoodsselect_cancel2 BITMAP  DISCARDABLE     "res\\goodsselect_cancel2.bmp"
+IDB_BITMAPgoodsselect_query1 BITMAP  DISCARDABLE     "res\\goodsselect_query1.bmp"
+IDB_BITMAPlogin_cancel1 BITMAP  DISCARDABLE     "res\\login_cancel1.bmp"
+IDB_BITMAPlogin_cancel2 BITMAP  DISCARDABLE     "res\\login_cancel2.bmp"
+IDB_BITMAPlogin_login1  BITMAP  DISCARDABLE     "res\\login_login1.bmp"
+IDB_BITMAPlogin_login2  BITMAP  DISCARDABLE     "res\\login_login2.bmp"
+IDB_BITMAPmangepower_set1 BITMAP  DISCARDABLE     "res\\mangepower_set1.bmp"
+IDB_BITMAPmangepower_set2 BITMAP  DISCARDABLE     "res\\mangepower_set2.bmp"
+IDB_BITMAPbackground    BITMAP  DISCARDABLE     "res\\background.bmp"
+IDB_BITMAPmy_login2     BITMAP  DISCARDABLE     "res\\my_login2.bmp"
+IDB_BITMAPmy_change1    BITMAP  DISCARDABLE     "res\\my_change1.bmp"
+IDB_BITMAPmy_change2    BITMAP  DISCARDABLE     "res\\my_change2.bmp"
+IDB_BITMAPmy_count1     BITMAP  DISCARDABLE     "res\\my_count1.bmp"
+IDB_BITMAPmy_count2     BITMAP  DISCARDABLE     "res\\my_count2.bmp"
+IDB_BITMAPmy_eat1       BITMAP  DISCARDABLE     "res\\my_eat1.bmp"
+IDB_BITMAPmy_eat2       BITMAP  DISCARDABLE     "res\\my_eat2.bmp"
+IDB_BITMAPmy_employ1    BITMAP  DISCARDABLE     "res\\my_employ1.bmp"
+IDB_BITMAPmy_employ2    BITMAP  DISCARDABLE     "res\\my_employ2.bmp"
+IDB_BITMAPmy_exit1      BITMAP  DISCARDABLE     "res\\my_exit1.bmp"
+IDB_BITMAPmy_exit2      BITMAP  DISCARDABLE     "res\\my_exit2.bmp"
+IDB_BITMAPmy_login1     BITMAP  DISCARDABLE     "res\\my_login1.bmp"
+IDB_BITMAPmonthincome_enquery2 BITMAP  DISCARDABLE     "res\\monthincome_enquery2.bmp"
+IDB_BITMAPmonthincome_cancel1 BITMAP  DISCARDABLE     "res\\monthincome_cancel1.bmp"
+IDB_BITMAPmonthincome_cancel2 BITMAP  DISCARDABLE     "res\\monthincome_cancel2.bmp"
+IDB_BITMAPmonthincome_enquery1 BITMAP  DISCARDABLE     "res\\monthincome_enquery1.bmp"
+IDB_BITMAPot_back2      BITMAP  DISCARDABLE     "res\\ot_back2.bmp"
+IDB_BITMAPot_select1    BITMAP  DISCARDABLE     "res\\ot_select1.bmp"
+IDB_BITMAPot_select2    BITMAP  DISCARDABLE     "res\\ot_select2.bmp"
+IDB_BITMAPot_back1      BITMAP  DISCARDABLE     "res\\ot_back1.bmp"
+IDB_BITMAPpay_member1   BITMAP  DISCARDABLE     "res\\pay_member1.bmp"
+IDB_BITMAPpay_member2   BITMAP  DISCARDABLE     "res\\pay_member2.bmp"
+IDB_BITMAPpay_OK1       BITMAP  DISCARDABLE     "res\\pay_OK1.bmp"
+IDB_BITMAPpay_OK2       BITMAP  DISCARDABLE     "res\\pay_OK2.bmp"
+IDB_BITMAPregister_register2 BITMAP  DISCARDABLE     "res\\register_register2.bmp"
+IDB_BITMAPregister_cancel1 BITMAP  DISCARDABLE     "res\\register_cancel1.bmp"
+IDB_BITMAPregister_cancel2 BITMAP  DISCARDABLE     "res\\register_cancel2.bmp"
+IDB_BITMAPregister_register1 BITMAP  DISCARDABLE     "res\\register_register1.bmp"
+IDB_BITMAPrs_browse1    BITMAP  DISCARDABLE     "res\\rs_browse1.bmp"
+IDB_BITMAPrs_browse2    BITMAP  DISCARDABLE     "res\\rs_browse2.bmp"
+IDB_BITMAPrs_cancel1    BITMAP  DISCARDABLE     "res\\rs_cancel1.bmp"
+IDB_BITMAPrs_cancel2    BITMAP  DISCARDABLE     "res\\rs_cancel2.bmp"
+IDB_BITMAPrs_r1         BITMAP  DISCARDABLE     "res\\rs_r1.bmp"
+IDB_BITMAPrs_r2         BITMAP  DISCARDABLE     "res\\rs_r2.bmp"
+IDB_BITMAPsd_OK1        BITMAP  DISCARDABLE     "res\\sd_OK1.bmp"
+IDB_BITMAPsd_OK2        BITMAP  DISCARDABLE     "res\\sd_OK2.bmp"
+IDB_BITMAPsd_pay1       BITMAP  DISCARDABLE     "res\\sd_pay1.bmp"
+IDB_BITMAPsd_pay2       BITMAP  DISCARDABLE     "res\\sd_pay2.bmp"
+IDB_BITMAPsd_select1    BITMAP  DISCARDABLE     "res\\sd_select1.bmp"
+IDB_BITMAPsd_select2    BITMAP  DISCARDABLE     "res\\sd_select2.bmp"
+IDB_BITMAPsd_cancel1    BITMAP  DISCARDABLE     "res\\sd_cancel1.bmp"
+IDB_BITMAPsd_cancel2    BITMAP  DISCARDABLE     "res\\sd_cancel2.bmp"
+IDB_BITMAPsd_cancelb1   BITMAP  DISCARDABLE     "res\\sd_cancelb1.bmp"
+IDB_BITMAPsd_cancelb2   BITMAP  DISCARDABLE     "res\\sd_cancelb2.bmp"
+IDB_BITMAPuseramanage_cancel2 BITMAP  DISCARDABLE     "res\\useramanage_cancel2.bmp"
+IDB_BITMAPusermanage_cancel1 BITMAP  DISCARDABLE     "res\\usermanage_cancel1.bmp"
+IDB_BITMAPusermanage_delete1 BITMAP  DISCARDABLE     "res\\usermanage_delete1.bmp"
+IDB_BITMAPusermanage_delete2 BITMAP  DISCARDABLE     "res\\usermanage_delete2.bmp"
+IDB_BITMAPusermanage_update1 BITMAP  DISCARDABLE     "res\\usermanage_update1.bmp"
+IDB_BITMAPusermanage_update2 BITMAP  DISCARDABLE     "res\\usermanage_update2.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    MENUITEM "登录",                        IDR_MENU_login
+    POPUP "管理"
+    BEGIN
+        POPUP "前台管理"
+        BEGIN
+            MENUITEM "开台",                        IDR_MENU_open
+            MENUITEM "修改菜单",                    IDR_MENU_update
+            MENUITEM "顾客结账",                    IDR_MENU_pay
+            MENUITEM "本日结算",                    IDR_MENU_dayincome
+            MENUITEM "厨师菜单",                    IDR_MENU_cookermenu
+        END
+        POPUP "后台管理"
+        BEGIN
+            MENUITEM "进货",                        IDR_MENU_buygoods
+            MENUITEM "员工管理",                    IDR_MENU_employeesManage
+            MENUITEM "商品信息",                    IDR_MENU_goodsInfo
+            MENUITEM "菜式信息",                    IDR_MENU_dishesInfo
+            MENUITEM "员工注册",                    IDR_MENU_register
+        END
+    END
+    POPUP "财政收支"
+    BEGIN
+        MENUITEM "日收入查询",                  IDR_MENU_dayincome
+        MENUITEM "月收入查询",                  IDR_MENU_monthIncome
+        MENUITEM "进货查询",                    IDR_MENU_goodsSelect
+    END
+    POPUP "结账"
+    BEGIN
+        MENUITEM "会员验证",                    IDR_menu_member
+        MENUITEM "结算",                        IDR_MENU_pay
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于我们",                    IDR_MENU_about
+    END
+    MENUITEM "",                            65535
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 餐饮管理系统(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\餐饮管理系统.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
